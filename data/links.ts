@@ -17,8 +17,8 @@ export const links: Link[] = [
     icon: FaInstagram,
   },
   {
-    title: "nuestra tienda online",
-    url: "https://wa.me/543764572478",
+    title: "Nuestra tienda online",
+    url: "https://www.altatelefonia.com.ar/",
     icon: CiShoppingCart,
   },{
     title: "Nova ( IA bot )",
@@ -26,7 +26,7 @@ export const links: Link[] = [
     icon: FaWhatsapp,
   },
   {
-    title: "milena Ventas",
+    title: "Milena Ventas",
     url: "https://wa.me/543764572478",
     icon: FaWhatsapp,
   },
@@ -37,7 +37,7 @@ export const links: Link[] = [
   },
  
   {
-    title: " nova (telegram)",
+    title: "Nova(telegram)",
     url: "https://wa.me/543764572478",
     icon: FaTelegram,
   },
