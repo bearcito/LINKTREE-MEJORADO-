@@ -19,7 +19,7 @@ export default function LinktreePage() {
         <div className="max-w-md mx-auto w-full">
           <div className="text-center mb-8 animate-fade-in">
             {/* Contenedor del avatar corregido */}
-            <div className="w-24 h-24 bg-white/20 backdrop-blur-md rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg border border-white/30 overflow-hidden">
+            <div className="w-24 h-24 bg-white/20 backdrop-blur-md rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg border border-white/30 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-white/50">
               <Image 
                 src="/Avatar.png"      // Ruta directa al archivo en /public
                 alt="Logo Alta Telefonía" 

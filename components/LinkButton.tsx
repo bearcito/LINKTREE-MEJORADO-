@@ -86,10 +86,10 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
     >
       <div className="relative z-10 flex items-center space-x-4" style={{ transform: "translateZ(20px)" }}>
         <div 
-          className="flex-shrink-0 w-12 h-12 rounded-full bg-[rgba(255,255,255,0.08)] border border-white/10 flex items-center justify-center backdrop-blur-sm shadow-inner transition-transform duration-300 group-hover:scale-110" 
+          className="flex-shrink-0 w-12 h-12 rounded-full bg-[rgba(255,255,255,0.08)] border border-white/10 flex items-center justify-center backdrop-blur-sm shadow-inner transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12" 
           style={{ transform: "translateZ(40px)" }}
         >
-          <Icon className="w-6 h-6 text-white drop-shadow-md" />
+          <Icon className="w-6 h-6 text-white drop-shadow-md transition-transform duration-300 group-hover:rotate-12" />
         </div>
         <div className="flex-1 text-left">
           <h3 className="text-white font-semibold text-lg tracking-wide drop-shadow-md" style={{ transform: "translateZ(10px)" }}>
