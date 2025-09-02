@@ -70,7 +70,7 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
         transformStyle: "preserve-3d",
       }}
       className={`
-        group relative w-full max-w-md mx-auto block p-5 rounded-3xl overflow-hidden
+        group relative w-full max-w-md mx-auto block p-4 rounded-3xl overflow-hidden
         bg-[rgba(${tint},0.08)] backdrop-blur-3xl border border-white/5
         shadow-xl shadow-black/40
         animate-wiggleFadeIn animate-shimmer
@@ -101,7 +101,7 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
             className="w-5 h-5 text-white/60 group-hover:text-white transition-colors duration-300"
             fill="none"
             stroke="currentColor"
-            viewBox="0 0 24 24"
+            viewBox="0 24 24"
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>

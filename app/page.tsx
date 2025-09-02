@@ -15,9 +15,9 @@ export default function LinktreePage() {
 
   return (
     <BackgroundCarousel images={carouselImages} autoSlideInterval={6000}>
-      <div className="min-h-screen flex items-center justify-center py-8 px-4">
+      <div className="min-h-screen flex items-center justify-center py-4 px-4">
         <div className="max-w-md mx-auto w-full">
-          <div className="text-center mb-8 animate-fade-in">
+          <div className="text-center mb-6 animate-fade-in">
             {/* Contenedor del avatar corregido */}
             <div className="w-24 h-24 bg-white/20 backdrop-blur-md rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg border border-white/30 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-white/50">
               <Image 
@@ -36,7 +36,7 @@ export default function LinktreePage() {
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             {links.map((link, index) => (
               <div
                 key={index}
@@ -51,7 +51,7 @@ export default function LinktreePage() {
             ))}
           </div>
 
-          <div className="text-center mt-8 pt-6 animate-fade-in-delayed">
+          <div className="text-center mt-6 pt-4 animate-fade-in-delayed">
             <p className="text-white/60 text-sm">© 2025 Alta Software</p>
           </div>
         </div>
