@@ -73,7 +73,7 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
         group relative w-full max-w-md mx-auto block p-5 rounded-3xl overflow-hidden
         bg-[rgba(${tint},0.08)] backdrop-blur-3xl border border-white/5
         shadow-xl shadow-black/40
-        animate-wiggleFadeIn
+        animate-wiggleFadeIn animate-shimmer
 
         before:absolute before:inset-0 before:rounded-3xl before:z-0
         before:opacity-100 before:bg-[radial-gradient(600px_circle_at_center,rgba(${tint},0.03),transparent_80%)]
@@ -92,7 +92,7 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
           <Icon className="w-6 h-6 text-white drop-shadow-md transition-transform duration-300 group-hover:rotate-12" />
         </div>
         <div className="flex-1 text-left">
-          <h3 className="text-white font-semibold text-lg tracking-wide drop-shadow-md" style={{ transform: "translateZ(10px)" }}>
+          <h3 className="text-white font-semibold text-lg tracking-wide drop-shadow-md transition-all duration-300 group-hover:translate-x-1 group-hover:drop-shadow-lg" style={{ transform: "translateZ(10px)" }}>
             {title}
           </h3>
         </div>
