@@ -12,6 +12,7 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
   const { title, url, icon: Icon } = link;
   const ref = useRef<HTMLAnchorElement>(null);
 
+  // For smooth light effect
   let mouseX = 0;
   let mouseY = 0;
   let currentX = 0;
@@ -20,8 +21,26 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
   const handleMouseMove = (e: MouseEvent<HTMLAnchorElement>) => {
     if (!ref.current) return;
     const rect = ref.current.getBoundingClientRect();
-    mouseX = e.clientX - rect.left;
-    mouseY = e.clientY - rect.top;
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    mouseX = x;
+    mouseY = y;
+
+    const width = rect.width;
+    const height = rect.height;
+    const rotateX = (y / height - 0.5) * -25;
+    const rotateY = (x / width - 0.5) * 25;
+    
+    const isPressed = (e.buttons === 1);
+    const scale = isPressed ? 0.97 : 1.04;
+
+    ref.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(${scale}, ${scale}, ${scale})`;
+  };
+
+  const handleMouseLeave = () => {
+    if (!ref.current) return;
+    ref.current.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
   };
 
   useEffect(() => {
@@ -45,11 +64,15 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
       rel="noopener noreferrer"
       ref={ref}
       onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        transition: "transform 0.15s cubic-bezier(0.16, 1, 0.3, 1)",
+        transformStyle: "preserve-3d",
+      }}
       className={`
         group relative w-full max-w-md mx-auto block p-5 rounded-3xl overflow-hidden
         bg-[rgba(${tint},0.08)] backdrop-blur-3xl border border-white/5
-        shadow-xl shadow-black/40 transition-all duration-700
-        ease-[cubic-bezier(0.16,1,0.3,1)] transform hover:scale-[1.04] active:scale-[0.97]
+        shadow-xl shadow-black/40
         animate-wiggleFadeIn
 
         before:absolute before:inset-0 before:rounded-3xl before:z-0
@@ -61,12 +84,15 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
         after:filter after:blur-2xl
       `}
     >
-      <div className="relative z-10 flex items-center space-x-4">
-        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[rgba(255,255,255,0.08)] border border-white/10 flex items-center justify-center backdrop-blur-sm shadow-inner">
+      <div className="relative z-10 flex items-center space-x-4" style={{ transform: "translateZ(20px)" }}>
+        <div 
+          className="flex-shrink-0 w-12 h-12 rounded-full bg-[rgba(255,255,255,0.08)] border border-white/10 flex items-center justify-center backdrop-blur-sm shadow-inner transition-transform duration-300 group-hover:scale-110" 
+          style={{ transform: "translateZ(40px)" }}
+        >
           <Icon className="w-6 h-6 text-white drop-shadow-md" />
         </div>
         <div className="flex-1 text-left">
-          <h3 className="text-white font-semibold text-lg tracking-wide drop-shadow-md">
+          <h3 className="text-white font-semibold text-lg tracking-wide drop-shadow-md" style={{ transform: "translateZ(10px)" }}>
             {title}
           </h3>
         </div>

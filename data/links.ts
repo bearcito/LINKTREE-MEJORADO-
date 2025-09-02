@@ -46,4 +46,9 @@ export const links: Link[] = [
     url: "https://maps.app.goo.gl/79UuMGxJiG4VZkQM9",
     icon: FaMapMarkerAlt,
   },
+  {
+    title: "Canal de WhatsApp",
+    url: "https://whatsapp.com/channel/0029Vb6ZBAh8aKvH1oCNHi1s",
+    icon: FaWhatsapp,
+  },
 ]
