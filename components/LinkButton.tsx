@@ -70,29 +70,29 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
         transformStyle: "preserve-3d",
       }}
       className={`
-        group relative w-full max-w-md mx-auto block p-4 rounded-3xl overflow-hidden
+        group relative w-full max-w-md mx-auto block p-3 rounded-2xl overflow-hidden
         bg-[rgba(${tint},0.08)] backdrop-blur-3xl border border-white/5
         shadow-xl shadow-black/40
         animate-wiggleFadeIn animate-shimmer
 
-        before:absolute before:inset-0 before:rounded-3xl before:z-0
+        before:absolute before:inset-0 before:rounded-2xl before:z-0
         before:opacity-100 before:bg-[radial-gradient(600px_circle_at_center,rgba(${tint},0.03),transparent_80%)]
 
-        after:absolute after:inset-0 after:rounded-3xl after:z-0
+        after:absolute after:inset-0 after:rounded-2xl after:z-0
         after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-700
         after:bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(${tint},0.2),transparent_70%)]
         after:filter after:blur-2xl
       `}
     >
-      <div className="relative z-10 flex items-center space-x-4" style={{ transform: "translateZ(20px)" }}>
+      <div className="relative z-10 flex items-center space-x-3" style={{ transform: "translateZ(20px)" }}>
         <div 
-          className="flex-shrink-0 w-12 h-12 rounded-full bg-[rgba(255,255,255,0.08)] border border-white/10 flex items-center justify-center backdrop-blur-sm shadow-inner transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12" 
+          className="flex-shrink-0 w-10 h-10 rounded-full bg-[rgba(255,255,255,0.08)] border border-white/10 flex items-center justify-center backdrop-blur-sm shadow-inner transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12" 
           style={{ transform: "translateZ(40px)" }}
         >
-          <Icon className="w-6 h-6 text-white drop-shadow-md transition-transform duration-300 group-hover:rotate-12" />
+          <Icon className="w-5 h-5 text-white drop-shadow-md transition-transform duration-300 group-hover:rotate-12" />
         </div>
         <div className="flex-1 text-left">
-          <h3 className="text-white font-semibold text-lg tracking-wide drop-shadow-md transition-all duration-300 group-hover:translate-x-1 group-hover:drop-shadow-lg" style={{ transform: "translateZ(10px)" }}>
+          <h3 className="text-white font-semibold text-base tracking-wide drop-shadow-md transition-all duration-300 group-hover:translate-x-1 group-hover:drop-shadow-lg" style={{ transform: "translateZ(10px)" }}>
             {title}
           </h3>
         </div>
@@ -101,7 +101,7 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
             className="w-5 h-5 text-white/60 group-hover:text-white transition-colors duration-300"
             fill="none"
             stroke="currentColor"
-            viewBox="0 24 24"
+            viewBox="0 0 24 24"
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>

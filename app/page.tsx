@@ -15,28 +15,28 @@ export default function LinktreePage() {
 
   return (
     <BackgroundCarousel images={carouselImages} autoSlideInterval={6000}>
-      <div className="min-h-screen flex items-center justify-center py-4 px-4">
+      <div className="min-h-screen flex items-center justify-center py-2 px-4">
         <div className="max-w-md mx-auto w-full">
-          <div className="text-center mb-6 animate-fade-in">
+          <div className="text-center mb-4 animate-fade-in">
             {/* Contenedor del avatar corregido */}
-            <div className="w-24 h-24 bg-white/20 backdrop-blur-md rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg border border-white/30 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-white/50">
+            <div className="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full mx-auto mb-3 flex items-center justify-center shadow-lg border border-white/30 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-white/50">
               <Image 
                 src="/Avatar.png"      // Ruta directa al archivo en /public
                 alt="Logo Alta Telefonía" 
-                width={96}              // Tamaño explícito para la optimización
-                height={96}
+                width={80}              // Tamaño explícito para la optimización
+                height={80}
                 className="object-contain" // Clases de estilo unificadas
                 priority // Hace que la imagen cargue más rápido (ideal para logos)
               />
             </div>
             
-            <h1 className="text-3xl font-bold text-white mb-2">Alta Telefonía</h1>
-            <p className="text-white/80 text-base leading-relaxed">
+            <h1 className="text-2xl font-bold text-white mb-1">Alta Telefonía</h1>
+            <p className="text-white/80 text-sm leading-relaxed">
               Especialistas en reparación de celulares de alta gama
             </p>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-2">
             {links.map((link, index) => (
               <div
                 key={index}
@@ -51,8 +51,8 @@ export default function LinktreePage() {
             ))}
           </div>
 
-          <div className="text-center mt-6 pt-4 animate-fade-in-delayed">
-            <p className="text-white/60 text-sm">© 2025 Alta Software</p>
+          <div className="text-center mt-4 pt-2 animate-fade-in-delayed">
+            <p className="text-white/60 text-xs">© 2025 Alta Software</p>
           </div>
         </div>
       </div>
