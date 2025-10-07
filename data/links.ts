@@ -1,8 +1,6 @@
 import type { IconType } from "react-icons"
-import { FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaFacebook } from "react-icons/fa"
-import { CiShoppingCart } from "react-icons/ci";
-import { FaTelegram } from "react-icons/fa";
-
+import { FaInstagram, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa"
+import { CiShoppingCart } from "react-icons/ci"
 
 export interface Link {
   title: string
@@ -20,9 +18,10 @@ export const links: Link[] = [
     title: "Nuestra tienda online",
     url: "https://www.altatelefonia.com.ar/",
     icon: CiShoppingCart,
-  },{
+  },
+  {
     title: "Nova ( IA bot )",
-    url: "https://wa.me/5493765124730",
+    url: "https://wa.link/fiq6wc",
     icon: FaWhatsapp,
   },
   {
@@ -35,13 +34,7 @@ export const links: Link[] = [
     url: "https://wa.me/543764120900",
     icon: FaWhatsapp,
   },
- 
   {
-    title: "Nova(telegram)",
-    url: "https://wa.me/543764572478",
-    icon: FaTelegram,
-  },
-   {
     title: "Nuestra Ubicación",
     url: "https://maps.app.goo.gl/79UuMGxJiG4VZkQM9",
     icon: FaMapMarkerAlt,
