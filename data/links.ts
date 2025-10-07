@@ -20,7 +20,7 @@ export const links: Link[] = [
     icon: CiShoppingCart,
   },
   {
-    title: "Nova ( IA bot )",
+    title: "NovaIA (consulta de precios 24/7)",
     url: "https://wa.link/fiq6wc",
     icon: FaWhatsapp,
   },
