@@ -6,7 +6,7 @@ interface LinkButtonProps {
 }
 
 export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonProps) {
-  const { title, url, icon: Icon } = link
+  const { title, url, icon: Icon, color } = link
 
   return (
     <a
@@ -31,7 +31,7 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
     >
       <div className="relative z-10 flex items-center space-x-4">
         <div className="flex-shrink-0 w-11 h-11 rounded-full bg-[rgba(255,255,255,0.08)] border border-white/10 flex items-center justify-center backdrop-blur-sm shadow-inner transition-transform duration-300 group-hover:scale-110">
-          <Icon className="w-5 h-5 text-white drop-shadow-md" />
+          <Icon className="w-5 h-5 drop-shadow-md" style={{ color: color ?? "#ffffff" }} />
         </div>
 
         <div className="flex-1 text-left">

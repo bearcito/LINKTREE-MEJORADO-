@@ -6,6 +6,7 @@ export interface Link {
   title: string
   url: string
   icon: IconType
+  color?: string
 }
 
 export const links: Link[] = [
@@ -13,6 +14,7 @@ export const links: Link[] = [
     title: "Instagram Principal",
     url: "https://www.instagram.com/altatelefoniaexpress/",
     icon: FaInstagram,
+    color: "#E4405F", // Instagram brand
   },
   {
     title: "Nuestra tienda online",
@@ -23,16 +25,19 @@ export const links: Link[] = [
     title: "NovaIA (consulta de precios 24/7)",
     url: "https://wa.link/fiq6wc",
     icon: FaWhatsapp,
+    color: "#25D366", // WhatsApp brand
   },
   {
     title: "Milena Ventas",
     url: "https://wa.me/543764572478",
     icon: FaWhatsapp,
+    color: "#25D366",
   },
   {
     title: "Nahuel Ventas",
     url: "https://wa.me/543764120900",
     icon: FaWhatsapp,
+    color: "#25D366",
   },
   {
     title: "Nuestra Ubicación",
@@ -43,5 +48,6 @@ export const links: Link[] = [
     title: "Canal de WhatsApp",
     url: "https://whatsapp.com/channel/0029Vb6ZBAh8aKvH1oCNHi1s",
     icon: FaWhatsapp,
+    color: "#25D366",
   },
 ]
