@@ -1,5 +1,5 @@
 import type { IconType } from "react-icons"
-import { FaInstagram, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa"
+import { FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaBriefcase } from "react-icons/fa"
 import { CiShoppingCart } from "react-icons/ci"
 
 export interface Link {
