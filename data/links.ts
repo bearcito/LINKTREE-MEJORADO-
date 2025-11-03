@@ -17,6 +17,12 @@ export const links: Link[] = [
     color: "#E4405F", // Instagram brand
   },
   {
+    title: "Gremio",
+    url: "https://www.altatelefonia.com.ar/gremio",
+    icon: FaBriefcase,
+    color: "#2563eb", // Professional blue color
+  },
+  {
     title: "Nuestra tienda online",
     url: "https://www.altatelefonia.com.ar/",
     icon: CiShoppingCart,
