@@ -19,11 +19,7 @@ export const metadata: Metadata = {
   title: "Alta Telefonía - Links",
   description: "Todos nuestros enlaces en un solo lugar",
   generator: 'v0.app',
-  icons: {
-    icon: '/Avatar.png',
-    shortcut: '/Avatar.png',
-    apple: '/Avatar.png',
-  },
+  // Next.js will automatically use app/icon.png as the favicon
 }
 
 export default function RootLayout({
