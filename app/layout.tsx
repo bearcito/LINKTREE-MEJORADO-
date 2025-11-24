@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   description: "Todos nuestros enlaces en un solo lugar",
   generator: 'v0.app',
   icons: {
-    icon: '/favicon.ico', // Favicon principal
-    apple: '/apple-touch-icon.png', // Apple Touch Icon
+    icon: '/Avatar.png', // Usando Avatar.png como favicon principal
+    apple: '/Avatar.png', // Usando Avatar.png como Apple Touch Icon
   },
 }
 
