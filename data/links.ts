@@ -1,5 +1,5 @@
 import type { IconType } from "react-icons"
-import { FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaBriefcase } from "react-icons/fa"
+import { FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaBriefcase, FaTiktok } from "react-icons/fa"
 import { CiShoppingCart } from "react-icons/ci"
 
 export interface Link {
@@ -18,9 +18,9 @@ export const links: Link[] = [
   },
   {
     title: "Gremio",
-    url: "https://www.altatelefonia.com.ar/gremio",
-    icon: FaBriefcase,
-    color: "#2563eb", // Professional blue color
+    url: "https://www.tiktok.com/@altatelefonia",
+    icon: FaTiktok,
+    color: "#000000", // TikTok brand color (black)
   },
   {
     title: "Nuestra tienda online",

@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#000000" rx="4"/>
+  <!-- Left side of A -->
+  <path d="M 8 24 L 12 8 L 16 8 L 20 24 L 16 24 L 15 18 L 13 18 L 12 24 Z" fill="#FF0000"/>
+  <!-- Right side of A with darker shade for 3D effect -->
+  <path d="M 16 8 L 20 8 L 24 24 L 20 24 L 19 18 L 17 18 L 16 24 Z" fill="#CC0000"/>
+  <!-- Inner fold/darker area at the apex -->
+  <path d="M 14 12 L 16 12 L 18 12 L 17 16 L 15 16 Z" fill="#990000"/>
+  <!-- Horizontal bar of A -->
+  <rect x="13" y="15" width="6" height="2" fill="#990000"/>
+</svg>
+
