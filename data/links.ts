@@ -20,7 +20,6 @@ export const links: Link[] = [
     title: "TikTok",
     url: "https://www.tiktok.com/@altatelefonia",
     icon: FaTiktok,
-    color: "#000000",
   },
   {
     title: "Nuestra tienda online",
