@@ -17,10 +17,10 @@ export const links: Link[] = [
     color: "#E4405F",
   },
   {
-    title: "Gremio",
+    title: "TikTok",
     url: "https://www.tiktok.com/@altatelefonia",
     icon: FaTiktok,
-    color: "#000000", // TikTok brand color
+    color: "#000000",
   },
   {
     title: "Nuestra tienda online",
