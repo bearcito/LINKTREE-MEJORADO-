@@ -14,24 +14,24 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
       target="_blank"
       rel="noopener noreferrer"
       className={`
-        group relative w-full max-w-md mx-auto block py-3 px-4 rounded-xl overflow-hidden
-        bg-[rgba(${tint},0.08)] backdrop-blur-3xl border border-white/5
-        shadow-xl shadow-black/40
-        transition-all duration-300 ease-out
-        hover:scale-[1.02] hover:shadow-2xl
+        group relative w-full max-w-md mx-auto block py-3 px-4 rounded-2xl overflow-hidden
+        bg-white/10 backdrop-blur-lg border border-white/20
+        shadow-lg shadow-black/20
+        transition-all duration-300 ease-in-out
+        hover:scale-[1.03] hover:shadow-xl hover:bg-white/20
 
-        before:absolute before:inset-0 before:rounded-xl before:z-0
-        before:opacity-100 before:bg-[radial-gradient(600px_circle_at_center,rgba(${tint},0.03),transparent_80%)]
+        before:absolute before:inset-0 before:rounded-2xl before:z-0
+        before:opacity-50 before:bg-[radial-gradient(400px_circle_at_center,rgba(255,255,255,0.1),transparent_80%)]
 
-        after:absolute after:inset-0 after:rounded-xl after:z-0
-        after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-700
-        after:bg-[radial-gradient(400px_circle_at_50%_50%,rgba(${tint},0.2),transparent_70%)]
-        after:filter after:blur-2xl
+        after:absolute after:inset-0 after:rounded-2xl after:z-0
+        after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-500
+        after:bg-[radial-gradient(300px_circle_at_50%_40%,white,transparent_60%)]
+        after:filter after:blur-3xl
       `}
     >
       <div className="relative z-10 flex items-center space-x-4">
-        <div className="flex-shrink-0 w-11 h-11 rounded-full bg-[rgba(255,255,255,0.08)] border border-white/10 flex items-center justify-center backdrop-blur-sm shadow-inner transition-transform duration-300 group-hover:scale-110">
-          <Icon className="w-5 h-5 drop-shadow-md" style={{ color: color ?? "#ffffff" }} />
+        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center backdrop-blur-md shadow-inner transition-transform duration-300 group-hover:scale-110">
+          <Icon className="w-6 h-6 drop-shadow-lg" style={{ color: color ?? "#ffffff" }} />
         </div>
 
         <div className="flex-1 text-left">
