@@ -22,7 +22,7 @@ module.exports = {
         },
       },
       animation: {
-        wiggleFadeIn: 'wiggleFadeIn 0.8s ease-out forwards',
+        wiggleFadeIn: "wiggleFadeIn 0.8s ease-out forwards",
       },
     },
   },

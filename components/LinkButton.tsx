@@ -35,7 +35,9 @@ export default function LinkButton({ link, tint = "255,255,255" }: LinkButtonPro
         </div>
 
         <div className="flex-1 text-left">
-          <h3 className="text-white font-semibold text-base tracking-wide drop-shadow-md">{title}</h3>
+          <h3 className="text-white font-semibold text-base tracking-wide drop-shadow-md">
+            {title}
+          </h3>
         </div>
 
         <svg

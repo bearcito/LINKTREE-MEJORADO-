@@ -12,7 +12,7 @@ export default function LinktreePage() {
   ]
 
   return (
-    <BackgroundCarousel images={carouselImages} autoSlideInterval={6000} >
+    <BackgroundCarousel images={carouselImages} autoSlideInterval={6000}>
       <div className="min-h-screen flex items-center justify-center py-2 px-4">
         <div className="max-w-md mx-auto w-full">
           <div className="text-center mb-4">

@@ -14,7 +14,7 @@ export const links: Link[] = [
     title: "Instagram Principal",
     url: "https://www.instagram.com/altatelefoniaexpress/",
     icon: FaInstagram,
-    color: "#E4405F", // Instagram brand
+    color: "#E4405F",
   },
   {
     title: "Gremio",

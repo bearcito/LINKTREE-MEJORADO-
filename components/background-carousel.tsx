@@ -10,7 +10,11 @@ interface BackgroundCarouselProps {
   children: React.ReactNode
 }
 
-export default function BackgroundCarousel({ images, autoSlideInterval = 5000, children }: BackgroundCarouselProps) {
+export default function BackgroundCarousel({
+  images,
+  autoSlideInterval = 5000,
+  children,
+}: BackgroundCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState<number>(0)
 
   useEffect(() => {

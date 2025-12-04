@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Alta Telefonía - Links",
-  description: "Todos nuestros enlaces en un solo lugar",
+  description: "Todos nuestros enlaces en un solo lugar.",
   generator: "v0.app",
   icons: {
     icon: '/favicon.png', // Favicon con logo "A" roja
