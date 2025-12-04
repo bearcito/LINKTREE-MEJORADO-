@@ -42,7 +42,7 @@ export default function BackgroundCarousel({ images, autoSlideInterval = 5000, c
       ))}
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
 
       {/* Content */}
       <div className="relative z-10">{children}</div>
