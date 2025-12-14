@@ -13,10 +13,10 @@ export default function LinktreePage() {
 
   return (
     <BackgroundCarousel images={carouselImages} autoSlideInterval={6000}>
-      <div className="min-h-screen flex items-center justify-center py-2 px-4">
+      <div className="min-h-screen flex items-center justify-center py-8 px-4">
         <div className="max-w-md mx-auto w-full">
-          <div className="text-center mb-4">
-            <div className="w-24 h-24 bg-white/20 backdrop-blur-md rounded-full mx-auto mb-3 flex items-center justify-center shadow-lg border border-white/30 overflow-hidden transition-transform duration-300 hover:scale-105">
+          <div className="text-center mb-6">
+            <div className="w-28 h-28 bg-white/10 backdrop-blur-xl rounded-full mx-auto mb-4 flex items-center justify-center shadow-2xl border border-white/20 overflow-hidden transition-transform duration-300 hover:scale-105">
               <Image
                 src="/Avatar.png"
                 alt="Logo Alta Telefonía"
